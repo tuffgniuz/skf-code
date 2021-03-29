@@ -1,11 +1,13 @@
 import { commands, ExtensionContext, Position } from 'vscode';
-import { GetRequirements } from './GetRequirements';
+import { Requirements } from './Requirements';
 
 export function activate(context: ExtensionContext) {
-	
+
 	let disposable = commands.registerCommand('skf.start', () => {
-		
-		const requirements = new GetRequirements();
+		console.log('hello')
+		// requirements.getChecklistCategories()
+		// const comment = new Comment();
+		// const requirements = new Requirements();
 
 	});
 
