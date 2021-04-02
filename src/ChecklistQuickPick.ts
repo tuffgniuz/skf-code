@@ -1,6 +1,11 @@
 import fetch, { Response } from "node-fetch";
 import { QuickPickItem, window } from "vscode";
 
+/**
+ * DONE: Generate Quickpick from SKF API
+ * TODO: Perform action on picked item from showQuickPick
+ */
+
 export class ShowChecklistQuickPick {
     private static _url: string = 'https://demo.securityknowledgeframework.org/api/checklist_category/items';
     private _token: string = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVc2VySWQiOjQ3MDg4NiwiaWF0IjoxNjE2NzQyMjgxLCJwcml2aWxlZ2UiOiJlZGl0OnJlYWQiLCJleHAiOjE2MTY3NDk0ODF9.c4ZS7pm2pr02IOp0xeV57yk9Cf80cQ5j568oVVaHG_s';
