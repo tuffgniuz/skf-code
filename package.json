@@ -10,10 +10,19 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:skf.start"
+    "onCommand:skf.start",
+    "onView:skfChecklist"
   ],
   "main": "./dist/extension.js",
   "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "skfChecklist",
+          "name": "SKF Checklist"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "skf.start",
@@ -50,6 +59,7 @@
     "webpack-cli": "^4.4.0"
   },
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "postman-request": "^2.88.1-postman.29"
   }
 }
