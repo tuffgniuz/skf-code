@@ -1,11 +1,11 @@
 import { commands, ExtensionContext, window, workspace } from 'vscode';
-import { ShowChecklistQuickPick } from './ChecklistQuickPick';
+import { skfQuickPick } from './ChecklistQuickPick';
 
 export function activate(context: ExtensionContext) {
 
 	let disposable = commands.registerCommand('skf.start', () => {
-		
-		new ShowChecklistQuickPick();
+
+		skfQuickPick.showCategories();
 	
 	});
 

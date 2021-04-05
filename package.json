@@ -10,19 +10,10 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:skf.start",
-    "onView:skfChecklist"
+    "onCommand:skf.start"
   ],
   "main": "./dist/extension.js",
   "contributes": {
-    "views": {
-      "explorer": [
-        {
-          "id": "skfChecklist",
-          "name": "SKF Checklist"
-        }
-      ]
-    },
     "commands": [
       {
         "command": "skf.start",
